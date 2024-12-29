@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="video video-right">
+           
+        </div>
+        <div class="game-container">
+            <div class="logo-container">
+                <img src="img/Computer-society.webp" alt="Logo" class="logo">
+            </div>
+            <h2 class="sub-title">IEEE Computer Society</h2>
+            <div id="word-container" class="word-container"></div>
+            <p id="hint" class="hint"><span id="hint-text"></span></p>
+
+            <div class="hangman-keyboard-container">
+                <div class="hangman-container">
+                    <div class="game-container2">
+                        <canvas id="hangmanCanvas" width="300" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="keyboard-container">
+                    <div id="alphabet" class="alphabet-container">
+                        <div class="alphabet-letter">A</div>
+                        <div class="alphabet-letter">B</div>
+                        <div class="alphabet-letter">C</div>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="game-info">
+                <p id="attempts">Remaining Attempts: 10</p>
+                <p id="status">Start the game!</p>
+            </div>
+
+            <button class="restart-btn" onclick="startGame()">Restart Game</button>
+            <div class="game-result" id="game-result"></div>
+        </div>
+
+        <div class="video video-left">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
